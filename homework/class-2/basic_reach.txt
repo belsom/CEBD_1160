@@ -51,16 +51,20 @@ sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ l
 "Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)"
 
 6. Print this file last 5 lines save the output to train_tail.csv
-
+~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ tail -5 train.csv > train_tail.csv
 
 7. Print only the lines 3 to 5 of the file?
-
+~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ sed -n '3,5p' train_tail.csv 
+889,0,3,"Johnston, Miss. Catherine Helen ""Carrie""",female,,1,2,W./C. 6607,23.45,,S
+890,1,1,"Behr, Mr. Karl Howell",male,26,0,0,111369,30,C148,C
+891,0,3,"Dooley, Mr. Patrick",male,32,0,0,370376,7.75,,Q
 
 8. Can you explain the command du -a . | sort -n -r | head -n 20 and why would you use it?
-
+This command gives the disk usage of each file in the current directory, sort it starting with the heaviest and show the first 20 files.
+THis command is useful to know which files takes most disk space.
 
 9. Split the train.csv file in multiple files with 20 lines each.
-
+~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ split -l 20 train.csv
 
 Write loops to iterate over lists
 1. Download the ​ ultratrail-du-montblanc.zip​ file from Slack and unzip it to
