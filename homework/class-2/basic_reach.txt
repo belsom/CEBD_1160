@@ -67,9 +67,11 @@ THis command is useful to know which files takes most disk space.
 ~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ split -l 20 train.csv
 
 Write loops to iterate over lists
-1. Download the ​ ultratrail-du-montblanc.zip​ file from Slack and unzip it to
-/Users/<myusername>/ultratrail
-2. Write a loop that prints the name, dimension and first 2 lines for each of the ​ .csv
-files.
-3. Write a loop that copies each of the ​ .csv​ files with the prefix ​ bkp-​ to a folder
-/Users/<myusername>/ultratrail/backups​ .
+1. Download the ultratrail-du-montblanc.zip file from Slack and unzip it to  /Users/<myusername>/ultratrail:
+sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials$ unzip ultratrail-du-montblanc.zip -d ~/ultratrail/
+
+2. Write a loop that prints the name, dimension and first 2 lines for each of the .csv files.
+
+
+3. Write a loop that copies each of the .csv files with the prefix bkp- to a folder /Users/<myusername>/ultratrail/backups.
+
