@@ -1,0 +1,71 @@
+Basic
+Use External Tools and Gnu Core Tools to enhance your shell skills. Compose them using pipes and filters.
+1. Unzip (using the terminal) our titanic.zip file to titanic ,
+titanic.zip have been copied under folder materials in CEBD_1160/homework/class-2, the command to lauch is:
+unzip titanic.zip -d titanic
+
+2. Provide the shape/dimensions of the file train.csv ?
+
+
+3. List the first 5 rows of the file. Now list the last 5.
+sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ head -5 train.csv 
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,0,3,"Braund, Mr. Owen Harris",male,22,1,0,A/5 21171,7.25,,S
+2,1,1,"Cumings, Mrs. John Bradley (Florence Briggs Thayer)",female,38,1,0,PC 17599,71.2833,C85,C
+3,1,3,"Heikkinen, Miss. Laina",female,26,0,0,STON/O2. 3101282,7.925,,S
+4,1,1,"Futrelle, Mrs. Jacques Heath (Lily May Peel)",female,35,1,0,113803,53.1,C123,S
+
+sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ tail -5 train.csv 
+887,0,2,"Montvila, Rev. Juozas",male,27,0,0,211536,13,,S
+888,1,1,"Graham, Miss. Margaret Edith",female,19,0,0,112053,30,B42,S
+889,0,3,"Johnston, Miss. Catherine Helen ""Carrie""",female,,1,2,W./C. 6607,23.45,,S
+890,1,1,"Behr, Mr. Karl Howell",male,26,0,0,111369,30,C148,C
+891,0,3,"Dooley, Mr. Patrick",male,32,0,0,370376,7.75,,Q
+
+4. Print this file in your screen using cat now use the less command.
+~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ cat train.csv 
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,0,3,"Braund, Mr. Owen Harris",male,22,1,0,A/5 21171,7.25,,S
+2,1,1,"Cumings, Mrs. John Bradley (Florence Briggs Thayer)",female,38,1,0,PC 17599,71.2833,C85,C
+3,1,3,"Heikkinen, Miss. Laina",female,26,0,0,STON/O2. 3101282,7.925,,S
+4,1,1,"Futrelle, Mrs. Jacques Heath (Lily May Peel)",female,35,1,0,113803,53.1,C123,S
+5,0,3,"Allen, Mr. William Henry",male,35,0,0,373450,8.05,,S
+6,0,3,"Moran, Mr. James",male,,0,0,330877,8.4583,,Q
+7,0,1,"McCarthy, Mr. Timothy J",male,54,0,0,17463,51.8625,E46,S
+8,0,3,"Palsson, Master. Gosta Leonard",male,2,3,1,349909,21.075,,S
+.....
+
+sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ less train.csv
+
+
+5. Can you print only the names of all people in the file?
+~/Desktop/CEBD_1160/homework/class-2/materials/titanic$ cut -d ',' -f4,5 train.csv 
+"Braund, Mr. Owen Harris"
+"Cumings, Mrs. John Bradley (Florence Briggs Thayer)"
+"Heikkinen, Miss. Laina"
+"Futrelle, Mrs. Jacques Heath (Lily May Peel)"
+"Allen, Mr. William Henry"
+"Moran, Mr. James"
+"McCarthy, Mr. Timothy J"
+"Palsson, Master. Gosta Leonard"
+"Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)"
+
+6. Print this file last 5 lines save the output to train_tail.csv
+
+
+7. Print only the lines 3 to 5 of the file?
+
+
+8. Can you explain the command du -a . | sort -n -r | head -n 20 and why would you use it?
+
+
+9. Split the train.csv file in multiple files with 20 lines each.
+
+
+Write loops to iterate over lists
+1. Download the ​ ultratrail-du-montblanc.zip​ file from Slack and unzip it to
+/Users/<myusername>/ultratrail
+2. Write a loop that prints the name, dimension and first 2 lines for each of the ​ .csv
+files.
+3. Write a loop that copies each of the ​ .csv​ files with the prefix ​ bkp-​ to a folder
+/Users/<myusername>/ultratrail/backups​ .
