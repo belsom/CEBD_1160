@@ -74,4 +74,4 @@ sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials$ unzip ult
 
 
 3. Write a loop that copies each of the .csv files with the prefix bkp- to a folder /Users/<myusername>/ultratrail/backups.
-
+sammy@sammy-VirtualBox:~/ultratrail/ultratrail-du-montblanc$ for i in bkp*.csv; do cp $i ~/backup; done
