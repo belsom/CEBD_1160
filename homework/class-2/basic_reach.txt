@@ -76,3 +76,27 @@ sammy@sammy-VirtualBox:~/Desktop/CEBD_1160/homework/class-2/materials$ unzip ult
 
 3. Write a loop that copies each of the .csv files with the prefix bkp- to a folder /Users/<myusername>/ultratrail/backups.
 sammy@sammy-VirtualBox:~/ultratrail/ultratrail-du-montblanc$ for i in bkp*.csv; do cp $i ~/backup; done
+
+
+
+Reach
+Create scripts to automate basic processes
+1. Write a script that suggests the data formats: csv, xlsx, pdf, doc and txt. It should allow the user to pick their desired extension then create a file named selected.<extension selected>. Use the read command to read the user input!
+
+
+#!/bin/sh
+
+echo "Please choose your extension for your file between these : csv, xlsx, pdf, doc, txt"
+
+read extension
+ case $extension in
+	csv|xlsx|pdf|doc|txt)
+		echo "Creating the file selected.$extension ..."
+		touch selected.$extension
+                echo "File selected.$extension has been created"
+		;;
+	*)
+		echo "Sorry, choose between the given list. Invalid extension"
+		;;
+  esac
+echo "Thank you!"
