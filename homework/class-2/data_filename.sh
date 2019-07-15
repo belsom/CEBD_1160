@@ -10,7 +10,7 @@ do
     ls selected.$extension
 		;;
 	*)
-		echo "Sorry, choose between the given list"
+		echo "Sorry, choose between the given list. Invalid extension"
 		;;
   esac
 done
