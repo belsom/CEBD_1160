@@ -5,9 +5,9 @@ echo "Please choose your extension for your file between these : csv, xlsx, pdf,
 read extension
  case $extension in
 	csv|xlsx|pdf|doc|txt)
-		echo "Creating the file selected.$extension"
+		echo "Creating the file selected.$extension ..."
 		touch selected.$extension
-                ls selected.$extension
+                echo "File selected.$extension has been created"
 		;;
 	*)
 		echo "Sorry, choose between the given list. Invalid extension"
