@@ -100,3 +100,8 @@ read extension
 		;;
   esac
 echo "Thank you!"
+
+
+2. Write a script that keeps only the first N number of lines of all files in '/Users//files_to_clean/*.csv'. N should be an argument passed before starting the script! If other people depend on this being done daily, how can we automate it's daily execution at 8:00AM?
+
+The daily execution at 8AM can be automated using crontab.
