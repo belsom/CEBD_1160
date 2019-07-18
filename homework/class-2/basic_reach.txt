@@ -1,7 +1,7 @@
 Basic
 Use External Tools and Gnu Core Tools to enhance your shell skills. Compose them using pipes and filters.
 1. Unzip (using the terminal) our titanic.zip file to titanic ,
-titanic.zip have been copied under folder materials in CEBD_1160/homework/class-2, the command to lauch is:
+titanic.zip have been copied under folder materials in CEBD_1160/homework/class-2, the command to execute is:
 unzip titanic.zip -d titanic
 
 2. Provide the shape/dimensions of the file train.csv ?
@@ -96,7 +96,7 @@ read extension
                 echo "File selected.$extension has been created"
 		;;
 	*)
-		echo "Sorry, choose between the given list. Invalid extension"
+		echo "Sorry, choose in the given list. Invalid extension"
 		;;
   esac
 echo "Thank you!"
