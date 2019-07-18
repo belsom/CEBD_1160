@@ -10,7 +10,7 @@ read extension
                 echo "File selected.$extension has been created"
 		;;
 	*)
-		echo "Sorry, choose between the given list. Invalid extension"
+		echo "Sorry, choose in the given list. Invalid extension"
 		;;
   esac
 echo "Thank you!"
